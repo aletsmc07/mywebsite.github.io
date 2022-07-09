@@ -87,6 +87,10 @@ h2 {
     box-sizing: border-box;
 }
 
+.avatarIcon {
+    margin-left: 15px;
+    margin-top: 15px;
+}
 
 ul, li {
     margin: 0;
