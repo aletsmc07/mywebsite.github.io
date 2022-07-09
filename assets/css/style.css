@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-image: url(/assets/images/backg.jpg);
+    background-attachment: fixed;
+    background-position: 50%;
+}
+
+/*Config about header and navigation bar*/
+header {
+    width: 100%;
+    height: 100px;
+    background-image: url(new-fondo1lateral.jpg);
+    background-size: cover;
+    display: flex;
+    position: fixed;
+    z-index: 51;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.start {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.start:hover {
+    padding: 5px;
+    background: white;
+    color: black;
+    border-radius: 25px;
+    transition: all 0.25s ease;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin: 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.25s ease;
+}
+
+.menu li a:hover {
+    padding: 5px;
+    background: white;
+    color: black;
+    border-radius: 25px;
+}
+
+/*Section About Me*/
+
+h2 {
+    color: white;
+    padding-top: 120px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.containerWork {
+    margin: auto;
+    margin-top: 20px;
+    max-width: 600px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    height: 300px;
+}
+
+ul.slider  p {
+    position: flex;
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 5px;
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+    width: 85%;
+    margin: auto;
+    /*left: 25%;
+    top: 100px;
+    transform: translate(-15%, -15%);*/
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: black;
+    transition: opacity 0.5s;
+    color: white;
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+.buttonslider {
+    text-align: center;
+    margin: 20px;
+}
+
+.buttonslider li {
+    display: inline-block;
+    text-align: center;
+}
+
+.buttonslider li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid rgb(102, 204, 242);
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.buttonslider li a:hover {
+    color: black;
+    background-color: white;
+    border: 4px solid rgb(4, 133, 180);
+    transition: all 0.5s ease;
+}
+
+#slide1 {
+    background-image: url(../images/slider1.png);
+    background-size: cover;
+    border: 5px solid rgb(102, 204, 242);
+    border-radius: 25px;
+}
+
+#slide2 {
+    background-image: url(../images/slider2.jpg);
+    background-size: cover;
+    border: 5px solid rgb(102, 204, 242);
+    border-radius: 25px;
+}
+
+#slide3 {
+    background-image: url(../images/slider3.png);
+    background-size: cover;
+    border: 5px solid rgb(102, 204, 242);
+    border-radius: 25px;
+}
+
+/*Section Work*/
+.myworksect {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.myworksect > h2 {
+    flex: 0 0 10%;
+    text-align: center;
+    padding-right: 15px;
+    font-size: 30px;
+}
+
+.myworksect p {
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*images for section work and animations*/
+.imgworks {
+    padding: 0 0 5px 0;
+    margin: 0.5em;
+    border: 5px solid rgb(102, 204, 242);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    flex-basis: calc(50% - 1em);
+    align-items: flex-end;
+    min-width: 250px;
+    min-height: 150px;
+    max-height: 150px;
+    background-size: 150%;
+    background-blend-mode: soft-light;
+    transition: all 0.25s ease;
+}
+
+.imgworks:hover {
+    background-color: rgba(98, 97, 97, 0.642);
+}
+
+.imgworks div {
+    background-color: rgb(102, 204, 242);
+    padding: 10px;
+    margin: 0 10px 10px 0;
+}
+
+.imgworks h3 h4 {
+    font-size: 1rem;
+}
+
+.subtitle { /*For h2 "WORK"*/
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/*For WORK project 1 */
+.work-proj1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    background-image: url(../images/P1.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 150px;
+    border-radius: 25px;
+}
+
+.stylep1 {
+    background-color: rgb(102, 204, 242);
+    padding: 10px;
+    margin: 0 10px 10px 0;
+    color: white;
+}
+
+.work-proj1:first-child {
+    min-height: 400px;
+    flex-basis: 85%;
+}
+
+.work-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
+/*All about footer*/
+footer {
+    background-image: url(footerwallpaper.jpg);
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.footerimg {
+    display: flex;
+    width: 100%;
+    height: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.owner {
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgba(38, 184, 38, 0.163);
+    color: white;
+}
+
+.imageIconsContact {
+    max-block-size: 40px;
+    display: flex;
+    margin: 25px;
+}
+
+/*background images for projects*/
+.project1 {
+    background-image: url(../images/P1.jpg);
+}
+
+.project2 {
+    background-image: url(../images/P2.jpg);
+}
+
+.project3 {
+    background-image: url(../images/P3.jpg);
+}
+
+.project4 {
+    background-image: url(../images/P4.jpg);
+}
+
+.project5 {
+    background-image: url(../images/P5.jpg);
+}
+
+/*Responsive properties */
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+        text-align: center;
+        padding: 0 0 15px 0;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    header .nav {
+        justify-content: center;
+    }
+
+    .mywork > h2,
+    .mywork > div {
+        flex: 0 0 100%;
+    }
+
+    .mywork > h2 {
+        border-right: none;
+        border-bottom: 5px solid var(--primary);
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+        text-align: left;
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    main,
+    p,
+    nav {
+        flex-direction: column;
+    }
+
+    .imgworks,
+    .imgworks:first-child {
+        flex-basis: 100%;
+    }
+
+    .slider {
+        max-width: 450px;
+    }
+}
