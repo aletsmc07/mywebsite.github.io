@@ -24,7 +24,10 @@ Developed app was created with:
 
 Some screenshots to show the environment 
 
-
+![image](https://user-images.githubusercontent.com/107447818/178124772-5a47550e-8ed0-46ca-9729-ddbd34519a37.png)
+![image](https://user-images.githubusercontent.com/107447818/178124785-e30e0ecc-cd1d-4471-a061-d01fcbde4ddf.png)
+![image](https://user-images.githubusercontent.com/107447818/178124797-e6748224-d0f1-4ed3-a597-54540615449b.png)
+![image](https://user-images.githubusercontent.com/107447818/178124806-6b84031e-b758-4d05-b7b4-cb02e32568dc.png)
 
 ## Develop
 
